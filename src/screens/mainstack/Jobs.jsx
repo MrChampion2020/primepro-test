@@ -213,7 +213,7 @@ export default function JobsScreen() {
           </Link>
         </motion.div>
       </motion.section>
-      <main style={{ flexGrow: 1, marginTop: NAVBAR_HEIGHT, position: 'relative', zIndex: 2 }}>
+      <main style={{ flexGrow: 1, marginTop: 20, position: 'relative', zIndex: 2 }}>
         {/* Search and Filter Section */}
         <motion.section 
           initial={{ opacity: 0 }}

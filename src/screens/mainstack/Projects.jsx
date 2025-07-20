@@ -150,13 +150,13 @@ export default function Projects() {
           </Link>
         </motion.div>
       </motion.section>
-      <main style={{ flexGrow: 1, marginTop: NAVBAR_HEIGHT, position: 'relative', zIndex: 2 }}>
+      <main style={{ flexGrow: 1, marginTop: 10, position: 'relative', zIndex: 2 }}>
         <motion.section 
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          style={{ padding: '60px 5%', background: '#fff', borderRadius: 20, margin: '40px auto', maxWidth: 1200 }}
+          style={{ padding: '60px 5%', background: '#fff', borderRadius: 20, margin: '20px auto', maxWidth: 1200 }}
         >
           <h2 style={{ fontSize: 'clamp(28px, 4vw, 42px)', fontWeight: 'bold', textAlign: 'center', marginBottom: 24, color: '#4B0082' }}>Project Portfolio</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 32 }}>

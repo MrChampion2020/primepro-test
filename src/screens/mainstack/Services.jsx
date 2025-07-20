@@ -148,14 +148,14 @@ export default function Services() {
           </Link>
         </motion.div>
       </motion.section>
-      <main style={{ fontFamily: 'Arial, sans-serif', color: '#333', maxWidth: '1200px', margin: '0 auto', padding: '60px 20px 40px 20px', position: 'relative', zIndex: 2, marginTop: NAVBAR_HEIGHT }}>
+      <main style={{ fontFamily: 'Arial, sans-serif', color: '#333', maxWidth: '1200px', margin: '0 auto', padding: '60px 20px 40px 20px', position: 'relative', zIndex: 2, marginTop: 10 }}>
 
         <motion.section
           variants={containerVariants}
           initial="hidden"
           animate="visible"
         >
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '36px', marginTop: 30 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '36px', marginTop: 15 }}>
             {services.map((service, index) => (
               <motion.div
                 key={index}

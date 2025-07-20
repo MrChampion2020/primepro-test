@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import background from '../../assets/bg.png';
 import chevron from '../../assets/chevron.png';
 import profile from '../../assets/profile.png';
-import logo from '../../assets/logo.png';
+// import logo from '../../assets/logo.png';
 import { AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
@@ -121,14 +121,14 @@ export default function About() {
           </Link>
         </motion.div>
       </motion.section>
-      <main style={{ flexGrow: 1, marginTop: NAVBAR_HEIGHT, position: 'relative', zIndex: 2 }}>
+      <main style={{ flexGrow: 1, marginTop: 10, position: 'relative', zIndex: 2 }}>
         {/* Company Mission & Vision */}
         <motion.section 
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          style={{ padding: '60px 5%', background: '#fff', borderRadius: 20, margin: '40px auto', maxWidth: 1000 }}
+          style={{ padding: '60px 5%', background: '#fff', borderRadius: 20, margin: '20px auto', maxWidth: 1000 }}
         >
           <h2 style={{ fontSize: 'clamp(28px, 4vw, 42px)', fontWeight: 'bold', textAlign: 'center', marginBottom: 24, color: '#4B0082' }}>Our Mission & Vision</h2>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 40, justifyContent: 'center' }}>
@@ -170,16 +170,6 @@ export default function About() {
         >
           <h2 style={{ fontSize: 'clamp(28px, 4vw, 42px)', fontWeight: 'bold', textAlign: 'center', marginBottom: 24, color: '#4B0082' }}>Frequently Asked Questions</h2>
           <FAQ />
-        </motion.section>
-        {/* Company Logo Section */}
-        <motion.section 
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          style={{ padding: '40px 0', background: 'transparent', textAlign: 'center' }}
-        >
-          <img src={logo} alt="Company Logo" style={{ width: 120, height: 120, borderRadius: 24, boxShadow: '0 2px 8px #667eea33', margin: '0 auto' }} />
         </motion.section>
       </main>
       <Footer />

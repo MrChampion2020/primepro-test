@@ -81,7 +81,7 @@ export default function HomeScreen() {
 
   const testimonials = [
     { 
-      name: 'Emmason', 
+      name: 'Emmanuel', 
       company: 'Runorx', 
       text: 'PrimePro has transformed our procurement process. Their expertise and dedication have significantly improved our operational efficiency.',
       rating: 5,
@@ -92,7 +92,7 @@ export default function HomeScreen() {
       company: 'Rented pages', 
       text: 'Their procurement solutions have revolutionized our business operations. The team is professional, responsive, and delivers exceptional results.',
       rating: 5,
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80'
+      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80'
     },
     { 
       name: 'Sarah Johnson', 
@@ -107,9 +107,9 @@ export default function HomeScreen() {
   const projects = [project1, project2, project3, project4, project5]
 
   const stats = [
-    { number: '500+', label: 'Projects Completed' },
-    { number: '50+', label: 'Happy Clients' },
-    { number: '20+', label: 'Years Experience' },
+    { number: '700+', label: 'Projects Completed' },
+    { number: '60+', label: 'Happy Clients' },
+    { number: '7+', label: 'Years Experience' },
     { number: '24/7', label: 'Support Available' },
   ]
 
@@ -543,22 +543,24 @@ export default function HomeScreen() {
               }}>
                 With over 20 years of experience, we are a leading procurement and engineering services company in Nigeria. Our commitment to excellence and innovation has made us the preferred partner for businesses across various industries.
               </p>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              style={{
-                backgroundColor: 'white',
-                color: '#667eea',
-                fontWeight: 'bold',
-                padding: '15px 30px',
-                borderRadius: '30px',
-                border: 'none',
-                fontSize: '18px',
-                cursor: 'pointer'
-              }}
-            >
-                Learn More About Us
-            </motion.button>
+            <Link to="/about">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                style={{
+                  backgroundColor: 'white',
+                  color: '#667eea',
+                  fontWeight: 'bold',
+                  padding: '15px 30px',
+                  borderRadius: '30px',
+                  border: 'none',
+                  fontSize: '18px',
+                  cursor: 'pointer'
+                }}
+              >
+                  Learn More About Us
+              </motion.button>
+            </Link>
           </div>
         </motion.section>
 

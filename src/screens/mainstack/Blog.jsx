@@ -171,7 +171,7 @@ export default function BlogScreen() {
           </Link>
         </motion.div>
       </motion.section>
-      <main style={{ flexGrow: 1, marginTop: NAVBAR_HEIGHT, position: 'relative', zIndex: 2 }}>
+      <main style={{ flexGrow: 1, marginTop: 20, position: 'relative', zIndex: 2 }}>
         {/* Category Filter */}
         <motion.section 
           initial={{ opacity: 0 }}

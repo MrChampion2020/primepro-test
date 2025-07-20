@@ -1,6 +1,6 @@
-import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import ScrollToTop from '../components/ScrollToTop';
+import React, { useEffect } from "react";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import ScrollToTop from "../components/ScrollToTop";
 import {
   Products,
   Services,
@@ -23,9 +23,18 @@ import {
   ProductsManagement,
 } from "../screens/admin";
 
+function ScrollRestoration() {
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+  return null;
+}
+
 const Navigation = () => {
   return (
     <BrowserRouter>
+      <ScrollRestoration />
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />  {/* Home Route */}
@@ -36,7 +45,6 @@ const Navigation = () => {
         <Route path="products" element={<Products />} />  {/* Products Route */}
         <Route path="blog" element={<Blog />} />  {/* Blog Route */}
         <Route path="jobs" element={<Jobs />} />  {/* Jobs Route */}
-        
         {/* Admin Routes */}
         <Route path="admin/login" element={<AdminLogin />} />
         <Route path="admin/dashboard" element={

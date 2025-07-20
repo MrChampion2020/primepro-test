@@ -196,7 +196,7 @@ export default function Contact() {
           </Link>
         </motion.div>
       </motion.section>
-      <main style={{ flexGrow: 1, marginTop: NAVBAR_HEIGHT, position: 'relative', zIndex: 2 }}>
+      <main style={{ flexGrow: 1, marginTop: 20, position: 'relative', zIndex: 2 }}>
         <div
           style={{
             maxWidth: '1200px',
@@ -388,12 +388,9 @@ export default function Contact() {
             {/* Address */}
             <motion.div whileHover={{ scale: 1.08, rotate: 2 }} whileTap={{ scale: 0.96 }} style={{ display: 'flex', alignItems: 'center', gap: 14, cursor: 'pointer' }} onClick={() => navigator.clipboard.writeText('NO. 73, EMEBIREN STREET OKUMAGBA LAYOUT, WARRI, DELTA STATE')} title="Copy address">
               <motion.div whileHover={{ scale: 1.2, color: '#FFA500' }} style={{ display: 'flex', alignItems: 'center' }}>
-                <MapPin size={24} color="#667eea" />
+                {/* <MapPin size={24} color="#667eea" /> */}
               </motion.div>
-              <div>
-                <div style={{ fontWeight: 600, color: '#333' }}>NO. 73, EMEBIREN STREET OKUMAGBA LAYOUT, WARRI, DELTA STATE</div>
-                <div style={{ fontSize: 14, color: '#888' }}>WARRI-SOUTH, DELTA STATE</div>
-              </div>
+             
             </motion.div>
             {/* Phone */}
             <motion.div whileHover={{ scale: 1.08, rotate: -2 }} whileTap={{ scale: 0.96 }} style={{ display: 'flex', alignItems: 'center', gap: 14, cursor: 'pointer' }} onClick={() => navigator.clipboard.writeText('+2347035918223')} title="Copy phone">
@@ -446,41 +443,7 @@ export default function Contact() {
             </div>
           </motion.div>
         </div>
-        {/* Move the map below, full width */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          viewport={{ once: true }}
-          style={{
-            maxWidth: '1200px',
-            margin: '40px auto 0',
-            padding: '0 20px',
-            background: 'rgba(255,255,255,0.85)',
-            boxShadow: '0 8px 32px #667eea22',
-            borderRadius: 24,
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            border: '1.5px solid #e0e7ff',
-          }}
-        >
-          <h2 style={{ fontSize: 24, fontWeight: 700, color: '#4B0082', marginBottom: 10 }}>Our Location</h2>
-          <div style={{ position: 'relative', width: '100%', height: 180, borderRadius: 16, overflow: 'hidden', marginBottom: 10, boxShadow: '0 2px 8px #667eea22' }}>
-            <img src={require('../../assets/background.jpg')} alt="Map" style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'grayscale(0.2)' }} />
-            {/* Animated pin */}
-            <motion.div
-              initial={{ y: -20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.6, duration: 0.6, type: 'spring' }}
-              whileHover={{ scale: 1.2, rotate: 10 }}
-              style={{ position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%, -100%)', zIndex: 2 }}
-            >
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="#FFA500" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 6-9 13-9 13s-9-7-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3" fill="#fff"/></svg>
-            </motion.div>
-          </div>
-          <div style={{ color: '#667eea', fontWeight: 600, fontSize: 16 }}>NO. 73, EMEBIREN STREET OKUMAGBA LAYOUT, WARRI, DELTA STATE</div>
-        </motion.div>
+       
       </main>
       <Footer />
     </div>
