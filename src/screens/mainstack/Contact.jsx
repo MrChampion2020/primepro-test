@@ -398,7 +398,7 @@ export default function Contact() {
                 <Phone size={24} color="#FFA500" />
               </motion.div>
               <div>
-                <div style={{ fontWeight: 600, color: '#333' }}>+2347035918223</div>
+                <div style={{ fontWeight: 600, color: '#333' }}>+2348057216362</div>
                 <div style={{ fontSize: 14, color: '#888' }}>Call Us</div>
               </div>
             </motion.div>
@@ -425,7 +425,7 @@ export default function Contact() {
             {/* Social & Quick Actions */}
             <div style={{ display: 'flex', gap: 18, marginTop: 10 }}>
               {/* WhatsApp */}
-              <motion.a whileHover={{ scale: 1.2, rotate: 8 }} href="https://wa.me/2340000000000" target="_blank" rel="noopener noreferrer" title="WhatsApp" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: 38, height: 38, borderRadius: '50%', background: '#25D366', boxShadow: '0 2px 8px #25D36633' }}>
+              <motion.a whileHover={{ scale: 1.2, rotate: 8 }} href="https://wa.me/+2348057216362" target="_blank" rel="noopener noreferrer" title="WhatsApp" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: 38, height: 38, borderRadius: '50%', background: '#25D366', boxShadow: '0 2px 8px #25D36633' }}>
                 <img src={require('../../assets/whatsapp.png')} alt="WhatsApp" style={{ width: 22, height: 22 }} />
               </motion.a>
               {/* Email */}
@@ -433,9 +433,9 @@ export default function Contact() {
                 <img src={require('../../assets/email.png')} alt="Email" style={{ width: 22, height: 22 }} />
               </motion.a>
               {/* LinkedIn (placeholder) */}
-              <motion.a whileHover={{ scale: 1.2, rotate: 8 }} href="#" title="LinkedIn" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: 38, height: 38, borderRadius: '50%', background: '#0077b5', boxShadow: '0 2px 8px #0077b533' }}>
+              {/* <motion.a whileHover={{ scale: 1.2, rotate: 8 }} href="#" title="LinkedIn" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: 38, height: 38, borderRadius: '50%', background: '#0077b5', boxShadow: '0 2px 8px #0077b533' }}>
                 <svg width="22" height="22" fill="white" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm15.5 11.268h-3v-5.604c0-1.337-.025-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.968v5.699h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.841-1.563 3.039 0 3.6 2.001 3.6 4.601v5.595z"/></svg>
-              </motion.a>
+              </motion.a> */}
               {/* Start Chat (opens chat widget) */}
               <motion.button whileHover={{ scale: 1.2, rotate: -8 }} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} title="Start Chat" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: 38, height: 38, borderRadius: '50%', background: 'linear-gradient(135deg, #667eea 0%, #FFA500 100%)', boxShadow: '0 2px 8px #FFA50033', border: 'none', cursor: 'pointer' }}>
                 <img src={require('../../assets/msg.png')} alt="Chat" style={{ width: 22, height: 22 }} />
